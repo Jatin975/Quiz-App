@@ -55,7 +55,7 @@ const getNewQuestion = () => {
     if (availableQuestion.length === 0 || questionCounter >= MAX_QUESTIONS) {
 
         localStorage.setItem('mostRecentScore', score);
-        return window.location.assign("/QuizApp/end.html");
+        return window.location.assign("/Quiz-App/end.html");
     }
     questionCounter++;
     hudQuestion.innerText = 'Question ' + questionCounter + "/" + MAX_QUESTIONS;
